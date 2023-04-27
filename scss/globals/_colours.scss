@@ -2,10 +2,12 @@
     // Primary
 
     --cyan: hsl(171, 66%, 44%);
-    --light-blue: hsl(233, 100%, 69%);
+    --light-b: hsl(233, 100%, 69%);
 
     // Neutral
 
-    --dark-grayish-blue: hsl(210, 10%, 33%);
-    --grayish-blue: hsl(201, 11%, 66%);
+    --dark-g-b: hsl(210, 10%, 33%);
+    --grayish-b: hsl(201, 11%, 66%);
+
+    // Custom https://css-tricks.com/snippets/sass/tint-shade-functions/
 }
