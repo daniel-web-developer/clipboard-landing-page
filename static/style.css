@@ -24,6 +24,9 @@ body {
 .flex-justcont-center {
   justify-content: center;
 }
+.flex-justcont-sb {
+  justify-content: space-between;
+}
 .flex-dir-column {
   flex-direction: column;
 }
@@ -92,16 +95,17 @@ body {
   font-weight: 600;
   color: var(--dark-g-b);
 }
-.snippets-paragraph {
-  font-size: 1rem;
-  padding-top: 30px;
-  color: var(--grayish-b);
-  padding-bottom: 85px;
-}
 .snippets img {
   width: 720px;
 }
+.snippets-block {
+  padding-right: 225px;
+  padding-left: 100px;
+}
 
+.section {
+  line-height: 30px;
+}
 .section-title {
   font-size: 2rem;
   font-weight: 600;
@@ -109,9 +113,28 @@ body {
 }
 .section-sub-t {
   font-size: 1rem;
-  padding-top: 30px;
   color: var(--grayish-b);
+  padding-top: 30px;
   padding-bottom: 85px;
+  line-height: 30px;
+}
+.section-block {
+  padding-bottom: 70px;
+}
+.section-block:first-child {
+  padding-top: 70px;
+}
+.section-block-title {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: var(--dark-g-b);
+  line-height: 30px;
+}
+.section-block-p {
+  font-size: 16px;
+  color: var(--grayish-b);
+  padding-top: 10px;
+  line-height: 30px;
 }
 
 @media screen and (max-width: 639px) {

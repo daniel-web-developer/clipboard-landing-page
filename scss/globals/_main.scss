@@ -1,5 +1,7 @@
 @use 'typography' as *;
 
+// For tomorrow: put image a little bit to the left
+
 html{
     box-sizing: border-box;
     font-size: 100%;
@@ -21,6 +23,10 @@ body{
 
     &-justcont-center{
         justify-content: center;
+    }
+
+    &-justcont-sb{
+        justify-content: space-between;
     }
 
     &-dir-column{
@@ -112,19 +118,19 @@ body{
         color: var(--dark-g-b);
     }
 
-    &-paragraph{
-        font-size: 1rem;
-        padding-top: 30px;
-        color: var(--grayish-b);
-        padding-bottom: 85px;
-    }
-
     img{
         width: 720px;
+    }
+
+    &-block{
+        padding-right: 225px;
+        padding-left: 100px;
     }
 }
 
 .section{
+    line-height: 30px;
+
     &-title{
         font-size: 2rem;
         font-weight: 600;
@@ -133,9 +139,32 @@ body{
 
     &-sub-t{
         font-size: 1rem;
-        padding-top: 30px;
         color: var(--grayish-b);
+        padding-top: 30px;
         padding-bottom: 85px;
+        line-height: 30px;
+    }
+
+    &-block{
+        padding-bottom: 70px;
+
+        &:first-child{
+            padding-top: 70px;
+        }
+    }
+
+    &-block-title{
+        font-size: 1.3rem;
+        font-weight: 600;
+        color: var(--dark-g-b);
+        line-height: 30px;
+    }
+
+    &-block-p{
+        font-size: 16px;
+        color: var(--grayish-b);
+        padding-top: 10px;
+        line-height: 30px;
     }
 }
 
