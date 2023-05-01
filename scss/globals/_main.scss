@@ -1,7 +1,5 @@
 @use 'typography' as *;
 
-// For tomorrow: put image a little bit to the left
-
 html{
     box-sizing: border-box;
     font-size: 100%;
@@ -27,6 +25,10 @@ body{
 
     &-justcont-sb{
         justify-content: space-between;
+    }
+
+    &-justcont-sa{
+        justify-content: space-around;
     }
 
     &-dir-column{
@@ -90,6 +92,8 @@ body{
 
         cursor: pointer;
 
+        transition: all 150ms ease-in-out;
+
         &:first-child{
             margin-right: 15px;
         }
@@ -104,7 +108,7 @@ body{
         border-color: var(--light-b) !important;
 
         &:hover{
-            background-color: #8697ff;
+            background-color: #8697ff !important;
         }
     }
 }
@@ -119,12 +123,13 @@ body{
     }
 
     img{
+        margin-left: -30px;
         width: 720px;
     }
 
     &-block{
         padding-right: 225px;
-        padding-left: 100px;
+        padding-left: 130px;
     }
 }
 
@@ -165,6 +170,70 @@ body{
         color: var(--grayish-b);
         padding-top: 10px;
         line-height: 30px;
+    }
+}
+
+.clipboard{
+    &-title{
+        padding-top: 110px;
+    }
+
+    img{
+        padding-top: 15px;
+        width: 910px;
+    }
+}
+
+.workflow{
+    &-title{
+        padding-top: 80px;
+    }
+
+    &-sub-t{
+        padding-bottom: 65px;
+    }
+
+    &-blocks{
+        display: flex;
+        justify-content: center;
+        padding-left: 175px;
+        padding-right: 175px;
+        align-items: start;
+    }
+
+    &-block{
+        padding-right: 40px;
+    }
+
+    &-block-title{
+        padding-top: 40px;
+    }
+
+    &-block-p{
+        width: 330px;
+    }
+
+    &-image{
+        padding: 4px 0 4px 0;
+    }
+}
+
+.brands{
+    padding-top: 160px;
+    padding-left: 170px;
+    padding-right: 170px;
+    max-width: 100vw;
+    
+    img{
+        align-self: center;
+    }
+}
+
+.available{
+    padding-top: 170px;
+
+    button{
+        margin-top: 0;
     }
 }
 
@@ -219,7 +288,14 @@ body{
             flex-direction: column;
         }
 
+        &-block{
+            text-align: center;
+            padding-right: 0;
+            padding-left: 0;
+        }
+
         img{
+            margin-left: 0;
             width: 320px;
         }
     }
@@ -233,9 +309,60 @@ body{
             font-size: 0.9rem;
         }
 
+        &-block{
+            padding-bottom: 50px;
+        }
+
         &-image{
             display: flex;
-            justify-content: center;
+            justify-content: space-around;
+        }
+    }
+
+    .clipboard{
+        &-sub-t{
+            padding-bottom: 40px !important;
+        }
+
+        img{
+            width: 345px;
+        }
+    }
+
+    .workflow{
+        &-title{
+            padding-top: 100px;
+        }
+        
+        &-blocks{
+            display: flex;
+            justify-content: space-around;
+            padding-left: 0;
+            max-width: 295px !important;
+            flex-direction: column;
+        }
+        
+        &-block{
+            padding-right: 0;
+        }
+
+        &-block-p{
+            padding-bottom: 60px;
+            width: 295px;
+        }
+    }
+
+    .brands{
+        padding: 60px 0 0 0;
+
+        flex-direction: column;
+
+        img{
+            padding-bottom: 65px;
+
+            &:last-child{
+                padding-bottom: 0;
+            }
         }
     }
 }
