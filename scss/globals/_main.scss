@@ -231,6 +231,11 @@ body{
 
 .available{
     padding-top: 170px;
+    padding-bottom: 170px;
+
+    &-text{
+        padding-bottom: 50px;
+    }
 
     button{
         margin-top: 0;
