@@ -14,6 +14,7 @@ body{
     margin: 0;
     padding: 0;
     font-family: $font;
+    font-weight: 400;
 }
 
 .flex{
@@ -242,6 +243,86 @@ body{
     }
 }
 
+.footer{
+    padding: 30px 170px 50px 170px;
+
+    &-image{
+        position: relative;
+        top: -10px;
+        width: 55px;
+        align-self: center;
+
+        margin-top: 0;
+        margin-right: 140px;
+    }
+
+    &-text-block{
+        padding-right: 100px;
+        min-width: fit-content;
+
+        &-last{
+            min-width: fit-content;
+            padding-right: 270px;
+
+            transition: all 150ms ease-in-out;
+
+            p{
+                width: fit-content;
+    
+                cursor: pointer;
+    
+                transition: all 150ms ease-in-out;
+    
+                &:hover{
+                    color: var(--cyan);
+                }
+            }
+        }
+
+        p{
+            width: fit-content;
+
+            cursor: pointer;
+
+            transition: all 150ms ease-in-out;
+
+            &:first-child{
+                margin-bottom: 15px;
+            }
+
+            &:hover{
+                color: var(--cyan);
+            }
+        }
+    }
+
+    &-texts{
+        font-size: 1rem;
+        color: var(--dark-g-b);
+        line-height: 30px;
+    }
+
+    &-icons{
+        align-self: center;
+
+        img{
+            margin-right: 25px;
+
+            cursor: pointer;
+
+            &:last-child{
+                margin-right: 0;
+            }
+
+            transition: all 150ms ease-in-out;
+
+            &:hover{
+                filter: invert(51%) sepia(99%) saturate(306%) hue-rotate(122deg) brightness(98%) contrast(97%);
+            }
+        }
+    }
+}
+
 @media screen and (max-width: 639px){
     
     body{
@@ -367,6 +448,53 @@ body{
 
             &:last-child{
                 padding-bottom: 0;
+            }
+        }
+    }
+
+    .footer{
+        padding: 50px 0 50px 0;
+
+        &-mobile{
+            flex-direction: column;
+            justify-content: space-around;
+        }
+
+        &-image{
+            top: 0;
+            margin-right: 0;
+            
+            padding-bottom: 50px;
+        }
+
+        &-text-block{
+            display: flex;
+
+            padding-right: 0;
+
+            text-align: center;
+    
+            &-last{
+                text-align: center;
+                
+                padding-right: 0;
+                padding-bottom: 55px;
+
+                p{
+                    width: auto;
+
+                    margin-bottom: 20px;
+                }
+            }
+
+            p{
+                width: auto;
+                
+                margin-bottom: 20px;
+
+                &:first-child{
+                    margin-bottom: 20px;
+                }
             }
         }
     }

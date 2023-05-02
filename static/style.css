@@ -16,6 +16,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: "Bai Jamjuree", sans-serif;
+  font-weight: 400;
 }
 
 .flex {
@@ -197,6 +198,69 @@ body {
   margin-top: 0;
 }
 
+.footer {
+  padding: 30px 170px 50px 170px;
+}
+.footer-image {
+  position: relative;
+  top: -10px;
+  width: 55px;
+  align-self: center;
+  margin-top: 0;
+  margin-right: 140px;
+}
+.footer-text-block {
+  padding-right: 100px;
+  min-width: -moz-fit-content;
+  min-width: fit-content;
+}
+.footer-text-block-last {
+  min-width: -moz-fit-content;
+  min-width: fit-content;
+  padding-right: 270px;
+  transition: all 150ms ease-in-out;
+}
+.footer-text-block-last p {
+  width: -moz-fit-content;
+  width: fit-content;
+  cursor: pointer;
+  transition: all 150ms ease-in-out;
+}
+.footer-text-block-last p:hover {
+  color: var(--cyan);
+}
+.footer-text-block p {
+  width: -moz-fit-content;
+  width: fit-content;
+  cursor: pointer;
+  transition: all 150ms ease-in-out;
+}
+.footer-text-block p:first-child {
+  margin-bottom: 15px;
+}
+.footer-text-block p:hover {
+  color: var(--cyan);
+}
+.footer-texts {
+  font-size: 1rem;
+  color: var(--dark-g-b);
+  line-height: 30px;
+}
+.footer-icons {
+  align-self: center;
+}
+.footer-icons img {
+  margin-right: 25px;
+  cursor: pointer;
+  transition: all 150ms ease-in-out;
+}
+.footer-icons img:last-child {
+  margin-right: 0;
+}
+.footer-icons img:hover {
+  filter: invert(51%) sepia(99%) saturate(306%) hue-rotate(122deg) brightness(98%) contrast(97%);
+}
+
 @media screen and (max-width: 639px) {
   body {
     padding: 0 40px 0 40px;
@@ -288,6 +352,39 @@ body {
   }
   .brands img:last-child {
     padding-bottom: 0;
+  }
+  .footer {
+    padding: 50px 0 50px 0;
+  }
+  .footer-mobile {
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  .footer-image {
+    top: 0;
+    margin-right: 0;
+    padding-bottom: 50px;
+  }
+  .footer-text-block {
+    display: flex;
+    padding-right: 0;
+    text-align: center;
+  }
+  .footer-text-block-last {
+    text-align: center;
+    padding-right: 0;
+    padding-bottom: 55px;
+  }
+  .footer-text-block-last p {
+    width: auto;
+    margin-bottom: 20px;
+  }
+  .footer-text-block p {
+    width: auto;
+    margin-bottom: 20px;
+  }
+  .footer-text-block p:first-child {
+    margin-bottom: 20px;
   }
 }
 @media screen and (min-width: 640px) {
