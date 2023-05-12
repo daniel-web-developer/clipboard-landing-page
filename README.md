@@ -41,7 +41,6 @@ Users should be able to:
 - CSS custom properties
 - JavaScript
 - Flexbox
-- CSS Grid
 - Desktop-first workflow
 
 ### What I learned
